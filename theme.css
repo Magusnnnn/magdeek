@@ -1,11 +1,25 @@
 /* Светлая тема MagDeek. Тёмная остаётся по умолчанию. */
+
+/* Главная: цвета заданы переменными в атрибуте style, переопределяем их */
+html[data-theme="light"] [style*="--bg:#0E1116"]{
+  --bg:#F5F7FA!important;--sf:#FFFFFF!important;--bd:#D8DEE8!important;
+  --tx:#111827!important;--mu:#4B5563!important;
+  background:#F5F7FA!important;color:#111827!important;
+}
+html[data-theme="light"] {--bg:#F5F7FA;--sf:#FFFFFF;--bd:#D8DEE8;--tx:#111827;--mu:#4B5563}
+
+/* Общий фон и текст */
 html[data-theme="light"] body{background:#F5F7FA!important;color:#111827!important}
+html[data-theme="light"] h1,html[data-theme="light"] h2,html[data-theme="light"] h3{color:#111827!important}
+html[data-theme="light"] a{color:#1D6FD1}
+
+/* Страницы под ниши: цвета заданы прямо в стилях элементов */
 html[data-theme="light"] [style*="#0E1116"]{background:#F5F7FA!important}
 html[data-theme="light"] [style*="#161B24"]{background:#FFFFFF!important;border-color:#D8DEE8!important}
 html[data-theme="light"] [style*="#252D3A"]{border-color:#D8DEE8!important}
 html[data-theme="light"] [style*="#E8ECF1"]{color:#111827!important}
 html[data-theme="light"] [style*="#A3AFBF"]{color:#4B5563!important}
-html[data-theme="light"] a[style*="color:#4DA3FF"],html[data-theme="light"] a{color:#1D6FD1}
-html[data-theme="light"] h1,html[data-theme="light"] h2,html[data-theme="light"] h3{color:#111827}
+
+/* Кнопка переключения темы */
 #md-theme-btn{position:fixed;right:16px;bottom:16px;z-index:9999;min-height:44px;padding:0 16px;border-radius:12px;border:1px solid #252D3A;background:#161B24;color:#E8ECF1;font:600 14px Inter,system-ui,sans-serif;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
 html[data-theme="light"] #md-theme-btn{background:#FFFFFF;color:#111827;border-color:#D8DEE8}
