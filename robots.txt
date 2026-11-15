@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://magusnnnn.github.io/magdeek/sitemap.xml
